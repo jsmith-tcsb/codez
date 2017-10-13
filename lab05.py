@@ -8,9 +8,15 @@ def map(fn, lst):
     >>> original_list
     [25, 1, 4, 0]
     """
-    "*** YOUR CODE HERE ***"
+    #"*** YOUR CODE HERE ***"
+    i = 0
+    while i<len(lst):
+        lst[i] = fn(lst[i])
+        i=i+1
+    return (lst)
 
-# Q2
+
+a = [1, 2, 3, 4, 5]
 def over_nine_thousand(original_list):
     """
     >>> original_list = [1, 2, 3, 4, 5]
@@ -18,7 +24,14 @@ def over_nine_thousand(original_list):
     >>> original_list
     [9001, 9002, 9003, 9004, 9005]
     """
-    "*** YOUR CODE HERE ***"
+    #"*** YOUR CODE HERE ***"
+    i = 0
+    while i<len(lst):
+        lst[i] = lst[i]+9000
+        i=i+1
+    return (lst)
+
+over_nine_thousand(a)
 
 ## Dictionaries ##
 
